@@ -5,6 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/components/ui/use-toast";
 import { Send } from "lucide-react";
+import AnimatedPlaceholder from './AnimatedPlaceholder';
 
 const NewsletterForm = () => {
   const [email, setEmail] = useState('');
@@ -37,15 +38,15 @@ const NewsletterForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6 w-full max-w-md">
-      <div className="space-y-2">
+      <div className="space-y-2 relative">
         <Input
           type="email"
-          placeholder={email ? "Enter email 🤘" : "Enter email 👈"}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="h-12 text-lg bg-white/10 border-white/20 placeholder:text-white/50 text-white font-mono backdrop-blur-sm placeholder:animate-bounce"
+          className="h-12 text-lg bg-white/10 border-white/20 text-white font-mono backdrop-blur-sm placeholder:text-transparent"
           required
         />
+        <AnimatedPlaceholder isTyping={email.length > 0} />
       </div>
       <div className="flex items-center space-x-2">
         <Checkbox
