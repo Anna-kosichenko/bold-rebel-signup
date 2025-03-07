@@ -45,7 +45,7 @@ const NewsletterForm = () => {
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="h-12 text-lg bg-black/5 border-black/20 placeholder:text-black/50 text-black font-mono"
+          className="h-12 text-lg bg-white/10 border-white/20 placeholder:text-white/50 text-white font-mono backdrop-blur-sm"
           required
         />
       </div>
@@ -54,16 +54,16 @@ const NewsletterForm = () => {
           id="terms" 
           checked={agreed}
           onCheckedChange={(checked) => setAgreed(checked as boolean)}
-          className="border-black/20 data-[state=checked]:bg-black data-[state=checked]:border-black"
+          className="border-white/20 data-[state=checked]:bg-[#D946EF] data-[state=checked]:border-[#D946EF]"
         />
-        <Label htmlFor="terms" className="text-sm text-black/80 font-mono">
+        <Label htmlFor="terms" className="text-sm text-white/90 font-mono">
           I want to receive creative updates
         </Label>
       </div>
       <Button 
         type="submit" 
         disabled={isLoading}
-        className="w-full h-12 text-lg font-mono bg-black hover:bg-black/90 text-[#FEF7CD] transition-all duration-300 ease-in-out uppercase tracking-wider"
+        className="w-full h-12 text-lg font-mono bg-[#D946EF] hover:bg-[#D946EF]/90 text-white transition-all duration-300 ease-in-out uppercase tracking-wider"
       >
         {isLoading ? (
           "Processing..."
