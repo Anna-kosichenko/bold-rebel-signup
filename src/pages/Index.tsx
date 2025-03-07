@@ -3,19 +3,19 @@ import NewsletterForm from "@/components/NewsletterForm";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#F97316] via-[#D946EF] to-[#8B5CF6] p-4">
-      <div className="w-full max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#FEF7CD]">
+      <div className="w-full max-w-4xl mx-auto text-center space-y-8 animate-fade-in p-4">
         <div className="space-y-4">
           <div className="inline-block">
-            <span className="px-4 py-1.5 bg-white/10 rounded-full text-white/80 text-sm font-medium animate-shimmer">
-              Fashion • Art • AI
+            <span className="px-4 py-1.5 bg-black text-[#FEF7CD] text-sm font-mono tracking-widest">
+              DIRECTOR • CREATOR • ARTIST
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white">
-            STAY TUNED
+          <h1 className="text-6xl md:text-8xl font-mono tracking-tighter text-black uppercase">
+            LET IT B
           </h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
-            Subscribe to our newsletter and never miss our designs, latest news, and creative insights.
+          <p className="text-xl font-mono text-black/80 max-w-2xl mx-auto tracking-tight">
+            Subscribe for weekly insights on art, fashion, and creative AI.
           </p>
         </div>
         
@@ -23,8 +23,8 @@ const Index = () => {
           <NewsletterForm />
         </div>
         
-        <p className="text-sm text-white/60">
-          Our newsletter is sent once a week, every Monday.
+        <p className="text-sm font-mono text-black/60 tracking-tight">
+          New content every Monday.
         </p>
       </div>
     </div>

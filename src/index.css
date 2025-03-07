@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -28,7 +29,8 @@
   }
 
   * {
-    @apply border-border antialiased;
+    @apply border-border antialiased font-mono;
+    font-family: 'Space Mono', monospace;
   }
 
   body {
